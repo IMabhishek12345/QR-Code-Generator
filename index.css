@@ -71,6 +71,12 @@ button:hover{
     /* display: flex;
     justify-content: center; */
    display: grid;
-   place-content: center;
+   place-items: center;
    margin-block: 20px;
+}
+.qr-body img{
+    max-width: 80%;
+    max-height: 80%;
+    border-color: 2px solid var(--border-color);
+    border-radius: var(--border-radius); 
 }
