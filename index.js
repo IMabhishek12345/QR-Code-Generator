@@ -25,6 +25,8 @@ sizes.addEventListener("change",(e)=>{
 
 downloadBtn.addEventListener("click",()=>{
     let img=document.querySelector(".qr-body img");
+    
+
     if (img!==null){
         let imgAttr=img.getAttribute("src");
         downloadBtn.setAttribute("href",imgAttr);
