@@ -9,8 +9,13 @@ generateBtn.addEventListener("click",(e)=>{
   e.preventDefault();
   GenerateQR();
 })
+sizes.addEventListener("change",(e)=>{
+    size=e.target.value;
+    GenerateQR();
+})
 
 function GenerateQR(){
+    qrbody.innerHTML="";
     new QRCode(qrbody, {
     text: qrtext.value,
     width: size,

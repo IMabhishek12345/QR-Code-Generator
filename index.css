@@ -66,3 +66,11 @@ body{
 button:hover{
     background-color: lightgray;
 }
+.qr-body{
+   /* Method 1 to center a content */
+    /* display: flex;
+    justify-content: center; */
+   display: grid;
+   place-content: center;
+   margin-block: 20px;
+}
