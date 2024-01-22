@@ -31,7 +31,7 @@ downloadBtn.addEventListener("click",()=>{
         let imgAttr=img.getAttribute("src");
         downloadBtn.setAttribute("href",imgAttr);
     }else{
-        downloadBtn.setAttribute("href",`${document.querySelector("canvas").toDataURL()}`);
+        downloadBtn.setAttribute("href",`${document.querySelector("canvas")}`);
     }
 })
 function GenerateQR(){
